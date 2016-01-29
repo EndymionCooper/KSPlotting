@@ -6,4 +6,4 @@ Whole genome duplications are thought to have been important in the evolution of
 
 As an example, this is the kS plot for ORF predicted from a de novo assembly of the olive transcriptome (data from [NCBI](http://www.ncbi.nlm.nih.gov/nuccore/GABQ00000000.1) published by [Muñoz-Mérida et al.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3576661/) The plot shows evidence for one or more large scale gene duplication events.
 
-![kS plot of paralogs in the olive transcriptome](./OliveTranscriptome.pdf)
+![kS plot of paralogs in the olive transcriptome](./OliveTranscriptome.png)
