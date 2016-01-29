@@ -1,4 +1,4 @@
-# Plotting pairwise kS distributions for paralogous genes.
+# Plotting pairwise kS distributions.
 
 ### Synopsis
 
