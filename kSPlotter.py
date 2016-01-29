@@ -1,30 +1,27 @@
-#!/Users/endymion/anaconda/bin/python
+#!/path/to/python
 
 ##########################################################################################
 #                                                                                        #
 #   Created by Endymion D. Cooper (endymion.dante.cooper@gmail.com)                      #
 #   This is version 1.0 created on 15th Sept 2015                                        #
 #                                                                                        #
-#   calculate_KS.py takes a table of blast hits and plots distributions of pairwise      #
+#   kSPlotter.py takes a table of blast hits and plots distributions of pairwise         #
 #   kS values for duplicated genes within a genome.                                      #
 #                                                                                        #
 #   Dependancies: written for python 2.7, builtins and standard libraries. Requires      #
 #   biopython. The following must also be in your path:                                  #
 #      - muscle                                                                          #
-#      - pal2nal                                                                         #
 #      - codeml (from paml)                                                              #
 #                                                                                        #
 #   Citation information (and versions I use) for dependencies.                          #
 #   MUSCLE v3.8.31                                                                       #
 #   Edgar, R.C. Nucleic Acids Res 32(5), 1792-97.                                        #
-#   PAL2NAL v14                                                                          #
-#   Suyama, M., Torrents, D., & Bork, P. (2006) Nucleic Acids Res. 34, W609-W612.        #
 #   PAML v4.8                                                                            #
 #   Yang, Z. (2007) Molecular Biology and Evolution 24: 1586-1591                        #
 #                                                                                        #
 #   Make sure the path to your python installation is correctly specified above.         #
 #                                                                                        #
-#   To get usage information: calculate_KS.py --help                                     #
+#   To get usage information: kSPlotter.py --help                                        #
 #                                                                                        #
 ##########################################################################################
 
@@ -47,7 +44,7 @@ parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpForm
    Created by Endymion D. Cooper (endymion.dante.cooper@gmail.com)                      
    This is version 1.0 created on 16th Sept 2015                                        
                                                                                         
-   calculate_KS.py takes a table of blast hits and generates kS values for inferred gene 
+   kSPlotter.py takes a table of blast hits and generates kS values for inferred gene 
    duplications
                                                                                         
    Dependancies: written for python 2.7, builtins and standard libraries. Requires      
@@ -58,7 +55,7 @@ parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpForm
    
    Next all pairwise kS values are computed within each gene family using:
        1. MUSCLE to generate a sequence alignment for each pair using amino acid sequences
-       2. PAL2NAL to generate nucleotide alignments using the amino acid alignments
+       2. No longer required: [PAL2NAL to generate nucleotide alignments using the amino acid alignments]
        3. PAML (codeml) to calculate maximum likelihood estimates of the kS scores.
 
    Redundancy in kS scores within a gene family is reduced to approximate gene 
